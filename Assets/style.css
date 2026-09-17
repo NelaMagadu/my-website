@@ -1,0 +1,133 @@
+ 
+
+/* ===== General Website Styling ===== */ 
+
+body { font-family: Arial, sans-serif;margin: 0;padding: 0;background-color: #f8f1e7;color: #333;} 
+
+/* ===== Header ===== */ 
+
+header {  
+
+background-color: #6f4e37;padding: 15px 30px; 
+
+display: flex; 
+justify-content: space-between; 
+align-items: center; 
+
+} 
+
+/* ===== Logo ===== */ 
+
+ header img {  
+
+width: 100px; 
+
+height: 100px; 
+
+object-fit: contain;} 
+
+/* ===== Navigation ===== */ 
+
+ nav { 
+
+ display: flex; 
+
+align-items: center;gap: 10px;} 
+
+nav a {  
+
+color: white;text-decoration: none;padding: 10px 15px;font-weight: bold;border-radius: 5px;} 
+
+/* Mouse hover */ 
+
+ nav a:hover { 
+
+ background-color: #d2a679;color: #333;} 
+
+/* Keyboard focus */ 
+
+ nav a:focus { 
+
+ background-color: #d2a679;color: #333;} 
+
+/* When clicked */ 
+
+ nav a:active {  
+
+background-color: #8b5e3c;color: white;} 
+/* ===== Main Content ===== */ 
+
+main { padding: 30px;max-width: 1200px;margin: auto;} 
+
+/* ===== Headings ===== */ 
+
+h1 { color: #6f4e37;text-align: center;font-size: 2.5rem;} 
+
+h2 { color: #8b5e3c;text-align: center;} 
+
+h3 { color: #6f4e37;} 
+
+/* ===== Paragraphs ===== */ 
+
+p { line-height: 1.6;font-size: 1rem;} 
+
+/* ===== Images ===== */ 
+
+img { max-width: 100%;height: auto;} 
+
+/* ===== Menu Items ===== */ 
+
+.menu-container { display: flex;justify-content: center;gap: 30px;flex-wrap: wrap;} 
+
+.menu-item { width: 300px;padding: 20px;background-color: white;text-align: center;border: 1px solid #ddd;border-radius: 10px;box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);} 
+
+.menu-item img { width: 100%;max-width: 300px;height: 200px;object-fit: cover;border-radius: 8px;} 
+
+/* ===== Buttons ===== */ 
+
+button { background-color: #6f4e37;color: white;border: none;padding: 10px 20px;border-radius: 5px;cursor: pointer;} 
+
+button:hover { background-color: #8b5e3c;} 
+ 
+/* ===== Footer ===== */ 
+
+ footer { 
+   width: 100%;
+
+ background-color: #6f4e37;color: white;text-align: center;padding: 30px 20px;margin-top: 40px 0 0 0;
+box-sizing: border-box;} 
+
+footer h3 {  
+
+color: white;font-size: 1.5rem;margin-bottom: 0 0 10px 0;} 
+
+footer p { margin: 8px 0;line-height: 1.5;} 
+
+footer .copyright { margin-top: 20px;padding-top: 15px;border-top: 1px solid #d2a679;font-size: 0.9rem;}
+/* ===== Responsive Design ===== */ 
+
+@media screen and (max-width: 768px) { 
+
+nav a { 
+   display: block; 
+   margin: 10px; 
+} 
+ 
+main { 
+   padding: 15px; 
+} 
+ 
+h1 { 
+   font-size: 2rem; 
+} 
+ 
+.menu-container { 
+   flex-direction: column; 
+   align-items: center; 
+} 
+ 
+.menu-item { 
+   width: 90%; 
+} 
+
+} 
