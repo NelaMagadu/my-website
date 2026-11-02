@@ -5,6 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LEE'S COFFEE SHOP | SERVICES</title>
     <link rel="stylesheet" href="../Assets/style.css">
+
+    <title>Our Menu | Lee's Coffee Shop Nxuba</title> 
+
+ 
+
+<meta name="description" 
+
+content="Explore the Lee's Coffee Shop menu, including cappuccino, latte, tea, breakfast, sandwiches, paninis, wraps, pastries and cakes."> 
+
+ 
+
+<meta name="keywords" 
+
+content="coffee menu, cappuccino, latte, americano, breakfast, sandwiches, paninis, pastries, cakes, Nxuba coffee shop"> 
+
+ 
+
+<meta name="author" content="Lee's Coffee Shop">
 </head>
 <body>
         <!-- Header --> 
@@ -13,7 +31,23 @@
          <img src="../Assets/images/logo.jpg" 
          width="100" 
          height="100" 
-         alt="Lee's Coffee Shop Logo"> 
+         alt="Lee's Coffee Shop Logo">
+         
+         <!-- Hamburger Menu Button --> 
+
+    <button class="menu-toggle" 
+
+            id="menu-toggle" 
+
+            aria-label="Open navigation menu" 
+
+            aria-expanded="false" 
+
+            aria-controls="main-navigation"> 
+
+        ☰ 
+
+    </button> 
         <!-- Navigation links --> 
         <nav> 
             <a href="../index.html">HOME</a> 
@@ -32,170 +66,332 @@
                 sweet treats at Lee's Coffee Shop. 
             </p> 
         <section> 
+            <div class="menu-controls"> 
+
+ 
+
+    <input 
+
+        type="text" 
+
+        id="menu-search" 
+
+        placeholder="Search for a menu item..." 
+
+        aria-label="Search menu items" 
+
+    > 
+
+ 
+
+    <select id="menu-filter" aria-label="Filter menu items"> 
+
+        <option value="all">All Items</option> 
+
+        <option value="drinks">Drinks</option> 
+
+        <option value="meals">Meals</option> 
+
+        <option value="snacks">Snacks</option> 
+
+    </select> 
+
+ 
+
+    <select id="menu-sort" aria-label="Sort menu items"> 
+
+        <option value="default">Default Order</option> 
+
+        <option value="low-high">Price: Low to High</option> 
+
+        <option value="high-low">Price: High to Low</option> 
+
+        <option value="name">Name: A to Z</option> 
+
+    </select> 
+
+ 
+
+</div> 
+
+ 
+
+<p id="no-results" class="no-results" hidden> 
+
+    No menu items found. Please try another search. 
+
+</p> 
     <h2 style="text-align: center;">Hot Beverages</h2> 
+
+    <div class="menu-grid" id="menu-grid"> 
+
+ 
+
     <!-- Cappuccino --> 
-    <img src="../Assets/images/cappuccino.webp" 
-         width="300" 
-         height="200" 
-         alt="Cappuccino"> 
-    <h3>Cappuccino - R28</h3> 
-    <p> 
-        A creamy coffee made with espresso, steamed milk and a layer 
-        of milk foam. 
-    </p> 
+
+    <div class="menu-item" data-category="drinks" data-price="28"> 
+
+        <img src="../Assets/images/cappuccino.webp" 
+
+             alt="Cappuccino"> 
+
+        <h3>Cappuccino - R28</h3> 
+
+        <p>A creamy coffee made with espresso, 
+
+        steamed milk and milk foam.</p> 
+
+    </div> 
+
+ 
+
     <!-- Latte --> 
-    <img src="../Assets/images/latte.webp" 
-         width="300" 
-         height="200" 
-         alt="Latte"> 
-    <h3>Latte - R30</h3> 
-    <p> 
-        A smooth and delicious coffee made with espresso and steamed milk. 
-    </p> 
+
+    <div class="menu-item" data-category="drinks" data-price="30"> 
+
+        <img src="../Assets/images/latte.webp" 
+
+             alt="Latte"> 
+
+        <h3>Latte - R30</h3> 
+
+        <p>A smooth coffee made with espresso 
+
+        and steamed milk.</p> 
+
+    </div> 
+
+ 
+
     <!-- Americano --> 
-    <img src="../Assets/images/americano.webp" 
-         width="300" 
-         height="200" 
-         alt="Americano"> 
-    <h3>Americano - R25</h3> 
-    <p> 
-        A rich and refreshing coffee made by combining espresso with 
-        hot water. 
-    </p> 
+
+    <div class="menu-item" data-category="drinks" data-price="25"> 
+
+        <img src="../Assets/images/americano.webp" 
+
+             alt="Americano"> 
+
+        <h3>Americano - R25</h3> 
+
+        <p>A rich coffee made by combining 
+
+        espresso with hot water.</p> 
+
+    </div> 
+
+ 
+
     <!-- Espresso --> 
-    <img src="../Assets/images/espresso.webp" 
-         width="300" 
-         height="200" 
-         alt="Espresso"> 
-    <h3>Espresso - R25</h3> 
-    <p> 
-        A strong and concentrated coffee with a rich flavour and 
-        smooth finish. 
-    </p> 
+
+    <div class="menu-item" data-category="drinks" data-price="25"> 
+
+        <img src="../Assets/images/espresso.webp" 
+
+             alt="Espresso"> 
+
+        <h3>Espresso - R25</h3> 
+
+        <p>A strong and concentrated coffee.</p> 
+
+    </div> 
+
+ 
+
     <!-- Mocha --> 
-    <img src="../Assets/images/mocha.webp" 
-         width="300" 
-         height="200"
-         alt="Mocha"> 
-    <h3>Mocha - R35</h3> 
-    <p> 
-        A delicious combination of espresso, steamed milk and 
-        chocolate flavour. 
-    </p> 
+
+    <div class="menu-item" data-category="drinks" data-price="35"> 
+
+        <img src="../Assets/images/mocha.webp" 
+
+             alt="Mocha"> 
+
+        <h3>Mocha - R35</h3> 
+
+        <p>A combination of espresso, milk 
+
+        and chocolate flavour.</p> 
+
+    </div> 
+
+ 
+
     <!-- Hot Chocolate --> 
-    <img src="../Assets/images/hot chocolate.webp" 
-         width="300" 
-         height="200" 
-         alt="Hot Chocolate"> 
-    <h3>Hot Chocolate - R36</h3> 
-    <p> 
-        A warm and comforting chocolate drink topped with 
-        creamy milk foam. 
-    </p> 
+
+    <div class="menu-item" data-category="drinks" data-price="36"> 
+
+        <img src="../Assets/images/hot chocolate.webp" 
+
+             alt="Hot Chocolate"> 
+
+        <h3>Hot Chocolate - R36</h3> 
+
+        <p>A warm and comforting chocolate drink.</p> 
+
+    </div> 
+
+ 
+
     <!-- Tea --> 
-    <img src="../Assets/images/tea.webp" 
-         width="300" 
-         height="200" 
-         alt="Tea"> 
-    <h3>Tea - R20</h3> 
-    <p> 
-        A refreshing selection of warm tea, perfect for enjoying 
-        at any time of the day
-    </p> 
-  </section> 
-        <!-- Food --> 
-        <section> 
-    <h2 style="text-align: center;">Food</h2> 
-    <!-- Breakfast Options --> 
-    <img src="../Assets/images/breakfast.webp" 
-         width="300" 
-         height="200" 
-         alt="Breakfast"> 
-    <h3>Breakfast Options - R120</h3> 
-    <p> 
-        Delicious and freshly prepared breakfast options to give you 
-        a great start to your day. 
-    </p> 
-    <!-- Sandwiches --> 
-    <img src="../Assets/images/sandwich.webp" 
-         width="300" 
-         height="200" 
-         alt="Fresh Sandwich"> 
-    <h3>Fresh Sandwiches - R45</h3> 
-    <p> 
-        Freshly prepared sandwiches made with quality ingredients, 
-        perfect for a quick and tasty meal. 
-    </p> 
-    <!-- Paninis --> 
-    <img src="../Assets/images/toasted panini.webp" 
-         width="300" 
-         height="200" 
-         alt="Toasted Panini"> 
-        </h3> Toasted Panini - R50</h3>
-    <p> 
-        Warm and crispy toasted paninis filled with delicious 
-        ingredients for a satisfying meal. 
-    </p> 
-    <!-- Wraps --> 
-    <img src="../Assets/images/wraps.webp" 
-         width="300" 
-         height="200" 
-         alt="Fresh Wrap"> 
-    <h3>Fresh Wraps -R46</h3> 
-    <p> 
-        Fresh and tasty wraps prepared with a selection of quality 
-        fillings and fresh ingredients. 
-    </p> 
-    <!-- Salads --> 
-    <img src="../Assets/images/fresh salads.webp" 
-         width="300" 
-         height="200" 
-         alt="Fresh Salad"> 
-    <h3>Fresh Salads -R50</h3> 
-    <p> 
-        Healthy and refreshing salads prepared with fresh vegetables 
-        and delicious toppings. 
-    </p> 
-    <!-- Muffins --> 
-    <img src="../Assets/images/muffins.webp" 
-         width="300" 
-         height="200" 
-         alt="Fresh Muffin"> 
-    <h3>Muffins - R20</h3> 
-    <p> 
-        Soft and freshly baked muffins, perfect for enjoying with 
-        your favourite hot beverage. 
-    </p> 
-    <!-- Croissants --> 
-    <img src="../Assets/images/croissants.webp" 
-         width="300" 
-         height="200" 
-         alt="Fresh Croissant"> 
-    <h3>Croissants - R30</h3> 
-    <p> 
-        Buttery and freshly baked croissants that make the perfect 
-        breakfast or afternoon treat. 
-    </p> 
-    <!-- Pastries --> 
-    <img src="../Assets/images/pastries.webp" 
-         width="300" 
-         height="200" 
-         alt="Fresh Pastry"> 
-    <h3>Fresh Pastries - R28</h3> 
-    <p> 
-        A variety of freshly baked pastries prepared for customers 
-        who enjoy a sweet treat with their coffee. 
-    </p> 
-    <!-- Slice Of Cake --> 
-    <img src="../Assets/images/slice of cake.webp" 
-         width="300" 
-         height="200"
-         alt="Fresh Cake"> 
-    <h3>Slices Of Cake - R40</h3> 
-    <p> 
-        Delicious slices of cakes made for special occasions or simply to 
-        enjoy with a cup of coffee. 
-    </p> 
+
+    <div class="menu-item" data-category="drinks" data-price="20"> 
+
+        <img src="../Assets/images/tea.webp" 
+
+             alt="Tea"> 
+
+        <h3>Tea - R20</h3> 
+
+        <p>A refreshing selection of warm tea.</p> 
+
+    </div> 
+
+ 
+
+    <!-- Breakfast --> 
+
+    <div class="menu-item" data-category="meals" data-price="120"> 
+
+        <img src="../Assets/images/breakfast.webp" 
+
+             alt="Breakfast"> 
+
+        <h3>Breakfast Options - R120</h3> 
+
+        <p>Freshly prepared breakfast options.</p> 
+
+    </div> 
+
+ 
+
+    <!-- Sandwich --> 
+
+    <div class="menu-item" data-category="meals" data-price="45"> 
+
+        <img src="../Assets/images/sandwich.webp" 
+
+             alt="Sandwich"> 
+
+        <h3>Fresh Sandwiches - R45</h3> 
+
+        <p>Freshly prepared sandwiches.</p> 
+
+    </div> 
+
+ 
+
+    <!-- Panini --> 
+
+    <div class="menu-item" data-category="meals" data-price="50"> 
+
+        <img src="../Assets/images/toasted panini.webp" 
+
+             alt="Toasted Panini"> 
+
+        <h3>Toasted Panini - R50</h3> 
+
+        <p>Warm and crispy toasted paninis.</p> 
+
+    </div> 
+
+ 
+
+    <!-- Wrap --> 
+
+    <div class="menu-item" data-category="meals" data-price="46"> 
+
+        <img src="../Assets/images/wraps.webp" 
+
+             alt="Fresh Wrap"> 
+
+        <h3>Fresh Wraps - R46</h3> 
+
+        <p>Fresh wraps with quality fillings.</p> 
+
+    </div> 
+
+ 
+
+    <!-- Salad --> 
+
+    <div class="menu-item" data-category="meals" data-price="50"> 
+
+        <img src="../Assets/images/fresh salads.webp" 
+
+             alt="Fresh Salad"> 
+
+        <h3>Fresh Salads - R50</h3> 
+
+        <p>Healthy salads made with fresh vegetables.</p> 
+
+    </div> 
+
+ 
+
+    <!-- Muffin --> 
+
+    <div class="menu-item" data-category="snacks" data-price="20"> 
+
+        <img src="../Assets/images/muffins.webp" 
+
+             alt="Muffin"> 
+
+        <h3>Muffins - R20</h3> 
+
+        <p>Soft and freshly baked muffins.</p> 
+
+    </div> 
+
+ 
+
+    <!-- Croissant --> 
+
+    <div class="menu-item" data-category="snacks" data-price="30"> 
+
+        <img src="../Assets/images/croissants.webp" 
+
+             alt="Croissant"> 
+
+        <h3>Croissants - R30</h3> 
+
+        <p>Buttery and freshly baked croissants.</p> 
+
+    </div> 
+
+ 
+
+    <!-- Pastry --> 
+
+    <div class="menu-item" data-category="snacks" data-price="28"> 
+
+        <img src="../Assets/images/pastries.webp" 
+
+             alt="Pastry"> 
+
+        <h3>Fresh Pastries - R28</h3> 
+
+        <p>A variety of freshly baked pastries.</p> 
+
+    </div> 
+
+ 
+
+    <!-- Cake --> 
+
+    <div class="menu-item" data-category="snacks" data-price="40"> 
+
+        <img src="../Assets/images/slice of cake.webp" 
+
+             alt="Cake Slice"> 
+
+        <h3>Slices of Cake - R40</h3> 
+
+        <p>Delicious slices of cake.</p> 
+
+    </div> 
+
+ 
+
+</div> 
 </section> 
         <!-- Ordering Information --> 
         <section> 
@@ -207,6 +403,127 @@
             </p> 
         </section> 
     </main> 
+    <!-- IMAGE GALLERY SECTION --> 
+
+<section class="gallery-section"> 
+
+ 
+
+    <h2>Our Coffee Shop Gallery</h2> 
+
+ 
+
+    <p>Take a look at some of our delicious treats and drinks.</p> 
+
+ 
+
+    <div class="gallery-container"> 
+
+ 
+
+        <img src="../Assets/images/cappuccino.webp" 
+        width="300" 
+         height="200"
+
+             alt="Fresh cappuccino" 
+
+             class="gallery-image"> 
+
+ 
+
+        <img src="../Assets/images/latte.webp" 
+        width="300" 
+         height="200"
+
+             alt="Fresh latte" 
+
+             class="gallery-image"> 
+
+ 
+
+        <img src="../Assets/images/mocha.webp" 
+        width="300" 
+         height="200"
+
+             alt="Delicious mocha" 
+
+             class="gallery-image"> 
+
+ 
+
+        <img src="../Assets/images/hot chocolate.webp" 
+        width="300" 
+         height="200"
+
+             alt="Hot chocolate" 
+
+             class="gallery-image"> 
+
+ 
+
+        <img src="../Assets/images/croissants.webp" 
+        width="300" 
+         height="200"
+
+             alt="Fresh croissant" 
+
+             class="gallery-image"> 
+
+ 
+
+        <img src="../Assets/images/slice of cake.webp" 
+        width="300" 
+         height="200"
+
+             alt="Delicious cake slice" 
+
+             class="gallery-image"> 
+
+ 
+
+    </div> 
+
+ 
+
+</section> 
+
+<!-- LIGHTBOX --> 
+
+<div id="lightbox" class="lightbox"> 
+
+ 
+
+    <button type="button" id="close-lightbox" 
+
+            class="close-lightbox" 
+
+            aria-label="Close image">&times;</button> 
+
+ 
+
+    <button type="button" id="previous-image" 
+
+            class="gallery-arrow" 
+
+            aria-label="Previous image">&#10094;</button> 
+
+ 
+
+    <img id="lightbox-image" src="" alt=""> 
+
+ 
+
+    <button type="button" id="next-image" 
+
+            class="gallery-arrow" 
+
+            aria-label="Next image">&#10095;</button> 
+
+ 
+
+    <p id="lightbox-caption"></p> 
+
+</div>
     <!-- Footer --> 
     <footer> 
             <h3>Lee's Coffee Shop</h3> 
@@ -221,5 +538,6 @@
         &copy; 2026 Lee's Coffee Shop. All Rights Reserved. 
     </p> 
     </footer> 
+    <script src="../Assets/script.js" defer></script> 
 </body>
 </html>
