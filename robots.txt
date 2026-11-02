@@ -1,0 +1,7 @@
+User-agent: * 
+
+Allow: / 
+
+ 
+
+Sitemap: https://LEE'S-COFFEE-SHOP/sitemap.xml
