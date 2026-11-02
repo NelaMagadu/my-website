@@ -1,85 +1,419 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../Assets/style.css">
-</head>
-<body>
+<!DOCTYPE html> 
+
+<html lang="en"> 
+
+ 
+
+<head> 
+
+    <meta charset="UTF-8"> 
+
+ 
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+ 
+
+    <title>Make an Enquiry | Lee's Coffee Shop Nxuba</title> 
+
+ 
+
+    <meta name="description" 
+
+          content="Make an enquiry about coffee, food, menu prices and bookings at Lee's Coffee Shop in Nxuba, Eastern Cape."> 
+
+ 
+
+    <meta name="keywords" 
+
+          content="Lee's Coffee Shop, coffee shop Nxuba, coffee menu, food prices, coffee enquiries"> 
+
+ 
+
+    <link rel="stylesheet" href="../Assets/style.css"> 
+
+    <title>Make an Enquiry | Lee's Coffee Shop</title> 
+
+ 
+
+<meta name="description" 
+
+content="Send an enquiry to Lee's Coffee Shop about our menu, products and services. Our friendly team will be happy to assist you."> 
+
+ 
+
+<meta name="keywords" 
+
+content="coffee shop enquiry, Lee's Coffee Shop enquiries, menu enquiries, coffee products, Nxuba"> 
+
+ 
+
+<meta name="author" content="Lee's Coffee Shop">
+
+</head> 
+
+ 
+
+<body> 
+
+ 
+
     <!-- Header --> 
+
     <header> 
-        <!-- Logo goes here --> 
-         <img src="../Assets/images/logo.jpg" 
-         width="100" 
-         height="100" 
-         alt="Lee's Coffee Shop Logo"> 
-        <!-- Navigation links --> 
-        <nav> 
+
+ 
+
+        <img src="../Assets/images/logo.jpg" 
+
+             width="100" 
+
+             height="100" 
+
+             alt="Lee's Coffee Shop Logo"> 
+
+ 
+
+        <!-- Hamburger Menu --> 
+
+        <button class="menu-toggle" 
+
+                id="menu-toggle" 
+
+                aria-label="Open navigation menu" 
+
+                aria-expanded="false" 
+
+                aria-controls="main-navigation"> 
+
+            ☰ 
+
+        </button> 
+
+ 
+
+        <!-- Navigation --> 
+
+        <nav id="main-navigation"> 
+
             <a href="../index.html">HOME</a> 
+
             <a href="./about.html">ABOUT US</a> 
+
             <a href="./contact.html">CONTACT US</a> 
+
             <a href="./enquiry.html">ENQUIRY</a> 
+
             <a href="./services.html">SERVICES</a> 
+
         </nav> 
+
     </header> 
-    <!-- Main section --> 
+
+    <!-- Main Content --> 
+
     <main> 
-        <section> 
-            <h1 style="text-align: center;">Make an Enquiry</h1> 
-            <p style="text-align: center;"> 
-                Have a question about our menu, products or services? 
-                Complete the form below and our friendly team will assist you. 
-            </p> 
-        </section> 
-        <!-- Enquiry Form --> 
+
+ 
 
         <section> 
-            <form> 
-                <label for="name">Full Name:</label> 
-                <br> 
-                <input type="text" id="name" name="name" required> 
-                <br><br> 
-                <label for="email">Email Address:</label> 
-                <br> 
-                <input type="email" id="email" name="email" required> 
-                <br><br> 
-                <label for="phone">Phone Number:</label> 
-                <br> 
-                <input type="tel" id="phone" name="phone"> 
-                <br><br> 
-                <label for="enquiry">Type of Enquiry:</label> 
-                <br> 
-                <select id="enquiry" name="enquiry"> 
-                    <option value="menu">Menu Information</option> 
-                    <option value="order">Order Enquiry</option> 
-                    <option value="booking">Booking Enquiry</option> 
-                    <option value="general">General Enquiry</option> 
-                </select> 
-                <br><br> 
-                <label for="message">Your Message:</label> 
-                <br> 
-                <textarea id="message" name="message" rows="6" cols="40" 
-                    placeholder="Enter your enquiry here..." required></textarea> 
-                <br><br> 
-                <input type="submit" value="Submit Enquiry"> 
-                <input type="reset" value="Clear"> 
-            </form> 
+
+ 
+
+            <h1>Make an Enquiry</h1> 
+
+ 
+
+            <p> 
+
+                Have a question about our coffee, food, menu prices or 
+
+                services? Complete the enquiry form below and our friendly 
+
+                team will be happy to assist you. 
+
+            </p> 
+
+ 
+
         </section> 
+
+ 
+
+        <!-- Enquiry Form --> 
+
+        <section class="form-container"> 
+
+ 
+
+            <h2>Enquiry Form</h2> 
+
+ 
+
+            <form id="enquiry-form"> 
+
+ 
+
+                <!-- Full Name --> 
+
+                <label for="name">Full Name:</label> 
+
+ 
+
+                <input type="text" 
+
+                       id="name" 
+
+                       name="name" 
+
+                       placeholder="Enter your full name" 
+
+                       minlength="2" 
+
+                       maxlength="60" 
+
+                       required> 
+
+ 
+
+                <br><br> 
+
+ 
+
+                <!-- Email --> 
+
+                <label for="email">Email Address:</label> 
+
+                <input type="email" 
+
+                       id="email" 
+
+                       name="email" 
+
+                       placeholder="Enter your email address" 
+
+                       required> 
+
+ 
+
+                <br><br> 
+
+                <!-- Phone --> 
+
+                <label for="phone">Phone Number:</label> 
+
+ 
+
+                <input type="tel" 
+
+                       id="phone" 
+
+                       name="phone" 
+
+                       placeholder="e.g. 0712345678" 
+
+                       pattern="[0-9+() -]{10,20}" 
+
+                       title="Enter a valid phone number using 10 to 20 characters"> 
+
+                <br><br> 
+
+ 
+
+                <!-- Type of Enquiry --> 
+
+                <label for="enquiry">Type of Enquiry:</label> 
+
+ 
+
+                <select id="enquiry" name="enquiry" required> 
+
+ 
+
+                    <option value="">Select an enquiry type</option> 
+
+ 
+
+                    <option value="menu">Menu Information</option> 
+
+ 
+
+                    <option value="order">Order Enquiry</option> 
+
+ 
+
+                    <option value="booking">Booking Enquiry</option> 
+
+ 
+
+                    <option value="general">General Enquiry</option> 
+
+ 
+
+                </select> 
+
+ 
+
+                <br><br> 
+
+ 
+
+                <!-- Menu Item --> 
+
+                <label for="menu-item"> 
+
+                    Select a Menu Item (if applicable): 
+
+                </label> 
+
+ 
+
+                <select id="menu-item" name="menu-item"> 
+
+ 
+
+                    <option value="">Select a menu item</option> 
+
+ 
+
+                    <option value="Cappuccino">Cappuccino - R28</option> 
+
+ 
+
+                    <option value="Latte">Latte - R30</option> 
+
+ 
+
+                    <option value="Americano">Americano - R25</option> 
+
+ 
+
+                    <option value="Espresso">Espresso - R25</option> 
+
+ 
+
+                    <option value="Mocha">Mocha - R35</option> 
+
+ 
+
+                    <option value="Hot Chocolate">Hot Chocolate - R36</option> 
+
+ 
+
+                    <option value="Tea">Tea - R20</option> 
+
+                    <option value="Breakfast">Breakfast - R120</option> 
+
+                    <option value="Sandwich">Sandwich - R45</option> 
+
+                    <option value="Panini">Panini - R50</option> 
+
+                    <option value="Wrap">Wrap - R46</option> 
+
+                    <option value="Salad">Salad - R50</option> 
+
+                    <option value="Muffin">Muffin - R20</option> 
+
+                    <option value="Croissant">Croissant - R30</option> 
+
+                    <option value="Pastry">Pastry - R28</option> 
+
+                    <option value="Cake">Slice of Cake - R40</option> 
+
+                </select> 
+
+                <br><br> 
+
+                <!-- Quantity --> 
+
+                <label for="quantity">Quantity (if applicable):</label> 
+
+                <input type="number" 
+
+                       id="quantity" 
+
+                       name="quantity" 
+
+                       min="1" 
+
+                       max="50" 
+
+                       value="1"> 
+
+                <br><br> 
+
+                <!-- Message --> 
+
+                <label for="message">Your Message:</label> 
+
+                <textarea id="message" 
+
+                          name="message" 
+
+                          rows="6" 
+
+                          maxlength="500" 
+
+                          placeholder="Enter your enquiry here..." 
+
+                          required></textarea> 
+
+                <br><br> 
+
+                <!-- Submit and Reset --> 
+
+                <button type="submit">Submit Enquiry</button> 
+
+                <button type="reset">Clear Form</button> 
+
+            </form> 
+
+            <!-- JavaScript Response --> 
+
+            <div id="enquiry-response" 
+
+                 class="form-response" 
+
+                 role="status" 
+
+                 aria-live="polite"> 
+
+            </div> 
+
+        </section> 
+
     </main> 
+
     <!-- Footer --> 
-    <footer>
-            <h3>Lee's Coffee Shop</h3> 
-    <p>Where every cup brings people together.</p> 
-    <p> 
-        📍 46 J.A. Calata St, Nxuba, Eastern Cape<br> 
-        📞 (041)-019-2834<br> 
-        ✉️ nellamagadu30@gmail.com 
-    </p> 
-    <p>Open Monday - Sunday | 7:00 AM - 6:00 PM</p> 
-    <p class="copyright"> 
-        &copy; 2026 Lee's Coffee Shop. All Rights Reserved. 
-    </p> 
+
+    <footer> 
+
+        <h3>Lee's Coffee Shop</h3> 
+
+        <p>Where every cup brings people together.</p> 
+
+        <p> 
+
+            📍 46 J.A. Calata St, Nxuba, Eastern Cape<br> 
+
+            📞 (041)-019-2834<br> 
+
+            ✉️ nellamagadu30@gmail.com 
+
+        </p> 
+
+        <p>Open Monday - Sunday | 7:00 AM - 6:00 PM</p> 
+
+        <p class="copyright"> 
+
+            &copy; 2026 Lee's Coffee Shop. All Rights Reserved. 
+
+        </p> 
+
     </footer> 
+
+    <script src="../Assets/script.js" defer></script> 
+
 </body> 
+
 </html>
